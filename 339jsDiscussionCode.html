@@ -27,9 +27,12 @@
 
 
 		// 2. Update the three span elements using ONLY JavaScript
-		document.getElementById("URL").innerHTML = "https://yh12399.github.io/539_Discussion_Wk10-main/";
+		var currentUrl = window.location.href;
+		var d = new Date();
+		var n = d.toLocaleTimeString();
+		document.getElementById("URL").innerHTML = currentUrl;
 		document.getElementById("items").innerHTML = "9";
-		document.getElementById("time").innerHTML = "8pm, Oct 31st, 2023";
+		document.getElementById("time").innerHTML = n;
 		document.getElementById("time").innerHTML += "<br/> <span>sky-blue-Ziqian Wang-Jiongyu Chen-Yupeng Yang</span>";
 
 
